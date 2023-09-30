@@ -1,7 +1,9 @@
 import 'dart:io';
 import 'person.dart';
+import 'dart:math';
 
 class Exceptions{
+  String? namee;
   String? weightt;
   String? heightt;
 
@@ -9,7 +11,7 @@ class Exceptions{
     try{
       if(weightt!.contains(",") || heightt!.contains(",")){
         weightt = weightt!.replaceAll(",", ".");
-        print(weightt);
+        //print(weightt);
 
         heightt = heightt!.replaceAll(",", ".");
         //print(heightt);
@@ -19,6 +21,23 @@ class Exceptions{
       stdout.write("there was an error $e! \n");
     }
 
-    return Person(weightt: weightt, heightt: heightt);
+    double? weightty = double.tryParse(weightt ?? '0.00');
+    //print("there ${weightty}");
+
+    double? heightty = double.tryParse(heightt ?? "0.00");
+    //print("there ${heightty}");
+
+    if(weightty! <= 0 || heightty! <= 0 || weightty == null || heightty == null){
+      throw Exception("There is an error! Weight or Height should be grater than zero! ");
+    }
+
+    double bmi = weightty / ( pow(heightty, 2) );
+    //
+    // logic right here
+    //
+    stdout.write('The result is ${bmi.toStringAsFixed(2)}');
+
+    return Person(namee: "Cauculus", weightt: weightt, heightt: heightt );
   }
 }
+
