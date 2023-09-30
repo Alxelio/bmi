@@ -15,3 +15,10 @@ I placed a new file called exceptions for handling some exceptions in this code,
 
 # Number 5
 I've finished making changes at exceptions file at the moment.
+
+# Number 6
+I added a simple calculus just to check it.
+
+# Number 7
+I placed a function calculus(bmi) in a new file called cauculus.dart for calculating the someone's body mass index. 
+

@@ -1,4 +1,6 @@
 import 'dart:io';
+import 'package:teste/cauculus.dart';
+
 import 'person.dart';
 import 'dart:math';
 
@@ -32,10 +34,8 @@ class Exceptions{
     }
 
     double bmi = weightty / ( pow(heightty, 2) );
-    //
-    // logic right here
-    //
-    stdout.write('The result is ${bmi.toStringAsFixed(2)}');
+
+    calculus(bmi);
 
     return Person(namee: "Cauculus", weightt: weightt, heightt: heightt );
   }
