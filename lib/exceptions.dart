@@ -1,22 +1,24 @@
 import 'dart:io';
+import 'person.dart';
 
 class Exceptions{
   String? weightt;
   String? heightt;
 
-  void checkCommaPoint(){
+  Person checkCommaPoint(){
     try{
       if(weightt!.contains(",") || heightt!.contains(",")){
         weightt = weightt!.replaceAll(",", ".");
-        //print(weightt);
+        print(weightt);
 
         heightt = heightt!.replaceAll(",", ".");
         //print(heightt);
       }
     }
     catch(e){
-      stdout.write("there was an error $e!");
+      stdout.write("there was an error $e! \n");
     }
 
+    return Person(weightt: weightt, heightt: heightt);
   }
 }
