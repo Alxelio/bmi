@@ -1,7 +1,7 @@
 class Person {
   String? namee;
-  double? weightt;
-  double? heightt;
+  String? weightt;
+  String? heightt;
 
   Person({this.namee, this.weightt, this.heightt});
 }

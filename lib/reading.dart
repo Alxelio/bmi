@@ -20,6 +20,6 @@ class Reading{
     heightt = stdin.readLineSync() ?? "0.00";
     //print('${heightt}');
 
-    return Person();
+    return Person(namee: namee, weightt: weightt, heightt: heightt);
   }
 }

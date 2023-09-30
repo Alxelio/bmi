@@ -10,4 +10,7 @@ I received someone's name, weight and height from terminal, handling some except
 # Number 3
 I made a new file called reading.dart just to componentize the code. I launched some new exceptions as well.
 
+# Number 4
+I placed a new file called exceptions for handling some exceptions in this code, just to avoid some errors.
+
 
