@@ -25,3 +25,8 @@ I placed a function calculus(bmi) in a new file called cauculus.dart for calcula
 # Number 8
 I made a file for testing the exceptions.dart file and its content, like convert comma to point and the other one, making some checks about negative values or zero ones for weight and height.
 
+# Number 9
+I have improved the file for testing the exceptions.dart file a little bit more. 
+
+If I want to run the main.dart at lib directory, I should use the command line such as: dart main.dart
+If I want to run the test.dart at test directory, I should use the command line such as: dart test.dart or CTRL + SHIFT + F10

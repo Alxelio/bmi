@@ -1,6 +1,5 @@
 import 'dart:io';
 import 'package:teste/cauculus.dart';
-
 import 'person.dart';
 import 'dart:math';
 
@@ -9,14 +8,17 @@ class Exceptions{
   String? weightt;
   String? heightt;
 
+  double? weightty;
+  double? heightty;
+  double? bmi;
+  double? imc;
+
   Person checkCommaPoint(){
     try{
       if(weightt!.contains(",") || heightt!.contains(",")){
         weightt = weightt!.replaceAll(",", ".");
-        //print(weightt);
 
         heightt = heightt!.replaceAll(",", ".");
-        //print(heightt);
       }
     }
     catch(e){
@@ -24,10 +26,8 @@ class Exceptions{
     }
 
     double? weightty = double.tryParse(weightt ?? '0.00');
-    //print("there ${weightty}");
 
     double? heightty = double.tryParse(heightt ?? "0.00");
-    //print("there ${heightty}");
 
     if(weightty! <= 0 || heightty! <= 0 || weightty == null || heightty == null){
       throw Exception("There is an error! Weight or Height should be grater than zero! ");
@@ -35,7 +35,7 @@ class Exceptions{
 
     double bmi = weightty / ( pow(heightty, 2) );
 
-    calculus(bmi);
+    imc = calculus(bmi);
 
     return Person(namee: "Cauculus", weightt: weightt, heightt: heightt );
   }

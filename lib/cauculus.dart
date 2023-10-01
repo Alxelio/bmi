@@ -1,6 +1,6 @@
 import 'dart:io';
 
-void calculus(double bmi){
+double calculus(double bmi){
 
   if(bmi < 16.0){
     stdout.write('Your Body Mass Index is ${bmi.toStringAsFixed(2)} - ');
@@ -30,6 +30,6 @@ void calculus(double bmi){
     stdout.write('Your Body Mass Index is ${bmi.toStringAsFixed(2)} - ');
     stdout.write("Invalid inputs, like negative values or stuff like that");
   }
-
+  return bmi;
 }
 

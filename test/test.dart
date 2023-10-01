@@ -24,5 +24,22 @@ void main() {
 
       expect(() => exceptions.checkCommaPoint(), throwsException);
     });
+
+    test('Making checks about the right value', () {
+      final exceptions = Exceptions();
+
+      exceptions.bmi = 15.0;
+      expect(15.0, lessThan(16.0));
+    });
+
+    test(
+      'Making checks about the right value', () {
+        final exceptions = Exceptions();
+
+        exceptions.imc = 41.0;
+        expect(41.0, greaterThanOrEqualTo(40));
+    });
+
+
   });
 }
