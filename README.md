@@ -22,3 +22,6 @@ I added a simple calculus just to check it.
 # Number 7
 I placed a function calculus(bmi) in a new file called cauculus.dart for calculating the someone's body mass index. 
 
+# Number 8
+I made a file for testing the exceptions.dart file and its content, like convert comma to point and the other one, making some checks about negative values or zero ones for weight and height.
+
